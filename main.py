@@ -10,6 +10,7 @@ e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 def button_add():
     return
+#button defining
 
 button1 = Button(root, text="1", padx=40, pady=20, command=button_add)
 button2 = Button(root, text="2", padx=40, pady=20, command=button_add)
@@ -22,6 +23,20 @@ button8 = Button(root, text="8", padx=40, pady=20, command=button_add)
 button9 = Button(root, text="9", padx=40, pady=20, command=button_add)
 button0 = Button(root, text="0", padx=40, pady=20, command=button_add)
 
-myButton = Button(root, text="Enter our Stack Quote", command=myClick)
+#button putting in screen
+button1.grid(row=3,column=0)
+button2.grid(row=3,column=1)
+button3.grid(row=3,column=2)
+
+button4.grid(row=2,column=0)
+button5.grid(row=2,column=1)
+button6.grid(row=2,column=2)
+
+button7.grid(row=1,column=0)
+button8.grid(row=1,column=1)
+button9.grid(row=1,column=2)
+
+button0.grid(row=4,column=0)
+
 
 root.mainloop()
