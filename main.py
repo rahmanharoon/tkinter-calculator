@@ -1,14 +1,20 @@
 from tkinter import *
 
-window=Tk()
-window.geometry("500x500")
-window.title("Simple Calculator")
-window.configure(bg="#676361")
-button=Button(window,text="OK",width=3,height=2,bg="black",fg="white")
-label=Label(window,text="submit")
+root = Tk()
+root.geometry("500x500")
+root.title("Simple Calculator")
+root.configure(bg="#676361")
+
+e=Entry(root, width=35, borderwidth=5)
+e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
+e.insert(0, "Enter Your Name: ")
 
 
-button.pack()
-label.pack()
+def myClick():
+    hello = "Hello" + e.get()
+    myLabel = label(root, text=hello)
+    myLabel.pack()
 
-window.mainloop()
+myButton = Button(root, text="Enter our Stack Quote", command=myClick)
+
+root.mainloop()
