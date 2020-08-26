@@ -30,14 +30,14 @@ def button_equal():
         e.insert(0, f_num + int(second_number))
 
     if math == "substraction":
-        e.insert(0, f_num + int(second_number))
+        e.insert(0, f_num - int(second_number))
 
     if math == "multiplication":
         e.insert(0, f_num + int(second_number))
 
     if math == "division":
         e.insert(0, f_num + int(second_number))
-            
+
 def button_substract():
     first_number = e.get()
     global f_num
