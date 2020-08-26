@@ -33,7 +33,7 @@ def button_equal():
         e.insert(0, f_num - int(second_number))
 
     if math == "multiplication":
-        e.insert(0, f_num + int(second_number))
+        e.insert(0, f_num * int(second_number))
 
     if math == "division":
         e.insert(0, f_num + int(second_number))
