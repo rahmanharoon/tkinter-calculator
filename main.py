@@ -26,7 +26,18 @@ def button_add():
 def button_equal():
     second_number = e.get()
     e.delete(0, END)
-    e.insert(0, f_num + int(second_number))
+    if math == "addition":
+        e.insert(0, f_num + int(second_number))
+
+    if math == "substraction":
+        e.insert(0, f_num + int(second_number))
+
+    if math == "multiplication":
+        e.insert(0, f_num + int(second_number))
+
+    if math == "division":
+        e.insert(0, f_num + int(second_number))
+            
 def button_substract():
     first_number = e.get()
     global f_num
