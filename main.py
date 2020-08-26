@@ -43,6 +43,9 @@ button0 = Button(root, text="0", padx=40, pady=20, command=lambda: button_click(
 button_add = Button(root, text="+", padx=39, pady=20, command=button_add)
 button_equal = Button(root, text="=", padx=91, pady=20, command=button_equal)
 button_clear = Button(root, text="Clear", padx=79, pady=20, command=button_clear)
+button_multiply = Button(root, text="X", padx=79, pady=20, command=button_clear)
+button_divide = Button(root, text="/", padx=79, pady=20, command=button_clear)
+button_substract = Button(root, text="-", padx=79, pady=20, command=button_clear)
 
 #button putting in screen
 button1.grid(row=3,column=0)
@@ -61,5 +64,9 @@ button0.grid(row=4, column=0)
 button_clear.grid(row=4, column=1, columnspan=2)
 button_add.grid(row=5, column=0)
 button_equal.grid(row=5, column=1, columnspan=2)
+
+button_substract.grid(row=6, column=0, columnspan=2)
+button_multiply.grid(row=6, column=1, columnspan=2)
+button_divide.grid(row=6, column=2, columnspan=2)
 
 root.mainloop()
