@@ -18,6 +18,8 @@ def button_click(number):
 def button_add():
     first_number = e.get()
     global f_num
+    global math
+    math="addition"
     f_num = int(first_number)
     e.delete(0, END)
 
@@ -26,11 +28,29 @@ def button_equal():
     e.delete(0, END)
     e.insert(0, f_num + int(second_number))
 def button_substract():
-    return
+    first_number = e.get()
+    global f_num
+    global math
+    math="substraction"
+    f_num = int(first_number)
+    e.delete(0, END)
+
 def button_multiply():
-    return
+    first_number = e.get()
+    global f_num
+    global math
+    math="multiplication"
+    f_num = int(first_number)
+    e.delete(0, END)
+
 def button_divide():
-    return
+    first_number = e.get()
+    global f_num
+    global math
+    math="division"
+    f_num = int(first_number)
+    e.delete(0, END)
+
 
 def button_clear():
     e.delete(0, END)
