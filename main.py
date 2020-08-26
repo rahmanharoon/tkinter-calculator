@@ -21,6 +21,11 @@ def button_add():
     f_num = int(first_number)
     e.delete(0, END)
 
+def button_equal():
+    second_number = e.get()
+    e.delete(0, END)
+    e.insert(0, f_num + int(second_number))
+
 def button_clear():
     e.delete(0, END)
 #button defining
@@ -36,7 +41,7 @@ button8 = Button(root, text="8", padx=40, pady=20, command=lambda: button_click(
 button9 = Button(root, text="9", padx=40, pady=20, command=lambda: button_click(9))
 button0 = Button(root, text="0", padx=40, pady=20, command=lambda: button_click(0))
 button_add = Button(root, text="+", padx=39, pady=20, command=button_add)
-buttonequal = Button(root, text="=", padx=91, pady=20, command=lambda: button_click())
+button_equal = Button(root, text="=", padx=91, pady=20, command=button_equal)
 button_clear = Button(root, text="Clear", padx=79, pady=20, command=button_clear)
 
 #button putting in screen
@@ -55,6 +60,6 @@ button9.grid(row=1,column=2)
 button0.grid(row=4, column=0)
 button_clear.grid(row=4, column=1, columnspan=2)
 button_add.grid(row=5, column=0)
-buttonequal.grid(row=5, column=1, columnspan=2)
+button_equal.grid(row=5, column=1, columnspan=2)
 
 root.mainloop()
