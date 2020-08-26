@@ -25,6 +25,12 @@ def button_equal():
     second_number = e.get()
     e.delete(0, END)
     e.insert(0, f_num + int(second_number))
+def button_substract():
+    return
+def button_multiply():
+    return
+def button_divide():
+    return
 
 def button_clear():
     e.delete(0, END)
@@ -43,9 +49,9 @@ button0 = Button(root, text="0", padx=40, pady=20, command=lambda: button_click(
 button_add = Button(root, text="+", padx=39, pady=20, command=button_add)
 button_equal = Button(root, text="=", padx=91, pady=20, command=button_equal)
 button_clear = Button(root, text="Clear", padx=79, pady=20, command=button_clear)
-button_multiply = Button(root, text="X", padx=79, pady=20, command=button_clear)
-button_divide = Button(root, text="/", padx=79, pady=20, command=button_clear)
-button_substract = Button(root, text="-", padx=79, pady=20, command=button_clear)
+button_multiply = Button(root, text="X", padx=40, pady=20, command=button_multiply)
+button_divide = Button(root, text="/", padx=40, pady=20, command=button_divide)
+button_substract = Button(root, text="-", padx=41, pady=20, command=button_substract)
 
 #button putting in screen
 button1.grid(row=3,column=0)
